@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STONE PAPER SCISSOR GAME</title>
+    <link rel="stylesheet" href="sps.css">
+</head>
+<body>
+    <div class="turn-container">
+        <h4 id="total-turn">Total Turn - </h4>
+        <h1>STONE PAPER SCISSOR</h1>
+        <h4 id="remaining-turn">Remaining Turn - </h4>
+    </div>
+    <div class="choices">
+        <div class="choice" id="rock">
+            <img src="/StonePaperScissorGame/assets/rock.png" alt="Rock Image">
+            <h4 class="overlayRock">Rock</h4>
+        </div>
+        <div class="choice" id="paper">
+            <img src="/StonePaperScissorGame/assets/paper.png" alt="Paper Image">
+            <h4 class="overlayPaper">Paper</h4>
+        </div>
+        <div class="choice" id="scissor">
+            <img src="/StonePaperScissorGame/assets/scissor.png" style="height: 160px; width: 160px;" alt="Scissor Image">
+            <h4 class="overlayScissor">Scissor</h4>
+        </div>
+    </div>
+    <div class="score-board">
+        <div class="score">
+            <p id="user-score">0</p>
+            <p id="userName">You</p>
+        </div>
+        <div class="score">
+            <p id="robo-score">0</p>
+            <p>Robo</p>
+        </div>
+    </div>
+    <div class="msg-container">
+        <div class="msg">Play your move</div>
+        <div class="result"></div>
+    </div>
+    <button id="newStart">Start Again</button>
+    
+    <script src="sps.js"></script>
+</body>
+</html>

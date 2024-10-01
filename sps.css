@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.choice{
+    height: 280px;
+    width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    flex-direction: column;
+}
+
+img{
+    height: 170px;
+    width: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+img:hover{
+    opacity: 0.5;
+}
+
+.choices{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+body{
+    background-color: #C2095A;
+}
+
+.score-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: #fff;
+    gap: 10rem;
+    margin-top: 4rem;
+}
+
+.msg-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
+.msg{
+    font-size: 2rem;
+    color: #090446;
+    background-color: #FEB95F;
+    padding: 0.5rem;
+    border-radius: 20px;
+    border: 2px solid #090446;
+}
+
+.resultShow{
+    font-size: 2rem;
+    color: #090446;
+    background-color: #FEB95F;
+    padding: 0.5rem;
+    border-radius: 20px;
+    border: 2px solid #090446;
+}
+
+.resultHide{
+    font-size: 2rem;
+    color: #090446;
+    background-color: #FEB95F;
+    padding: 0.5rem;
+    border-radius: 20px;
+    border: 2px solid #090446;
+    display: none;
+}
+
+#newStart{
+   margin-left: 80%;
+   margin-top: 1%;
+   font-size: 1.5rem;
+   background-color: #090446;
+   color: #fff;
+   padding: 10px 30px 10px;
+   border: 2px solid #FEB95F;
+   border-radius: 25px;
+   cursor: pointer;
+}
+
+
+.overlayRock{
+    content: "Rock";
+    font-size: 1.5rem;
+    color: #fff;
+    opacity: 0;
+    margin-top: 5px;
+    text-align: center;
+    
+}
+#rock:hover .overlayRock{
+    opacity: 1;
+}
+
+.overlayPaper{
+    content: "Rock";
+    font-size: 1.5rem;
+    color: #fff;
+    opacity: 0;
+    margin-top: 5px;
+    text-align: center;
+}
+
+#paper:hover .overlayPaper{
+    opacity: 1;
+}
+
+.overlayScissor{
+    content: "Rock";
+    font-size: 1.5rem;
+    color: #fff;
+    opacity: 0;
+    margin-top: 5px;
+    text-align: center;
+}
+
+#scissor:hover .overlayScissor{
+    opacity: 1;
+}
+
+.turn-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #090446;
+    color: #fff;
+    height: 5rem;
+    line-height: 5rem;
+    padding-right: 4rem;
+    padding-left: 4rem;
+}
+
+#total-turn, #remaining-turn{
+    color: #fff;
+    font-size: 1.5rem;
+}
